@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://waneekim.github.io/nadeuli/sitemap-index.xml
+Sitemap: https://happyvarious.com/nadeuli/sitemap-index.xml
