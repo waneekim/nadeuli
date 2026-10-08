@@ -16,3 +16,9 @@
 - 법적 경계 확인용 자료가 아닌 행사 탐색용 단순화 지도다. 원자료의 알려진 정확도 한계는 위 저장소 설명을 따른다.
 
 생성: `python automations/transform/build_korea_map.py`. 로컬 원자료를 쓰려면 `--source <geojson>`; 동일 SHA256만 허용한다.
+
+## 다국어 이름표 (2026-10-09)
+
+`src/lib/region-names.ts`가 230개 선택 영역의 영어·번체·일본어 표시 이름을 제공한다. 한글 지역명·행정코드·필터 URL은 그대로 유지한다. 강원 고성(高城)과 경남 고성(固城)처럼 같은 한글 이름도 검색 구역과 함께 구분한다. 일본어는 지명의 한자 표기에 일본어 자형·행정구역 접미사를 적용한다.
+
+표기 대조 자료: [경기도 중문 시·군 지도](https://chinese.gg.go.kr/), [경기도 일문 누리집](https://japanese.gg.go.kr/), [인천시 중문 행정구역](https://www.incheon.go.kr/cn/CN010103), [일본 농림수산성 한국 지도 포함 보고서](https://www.maff.go.jp/j/shokusan/gaisyoku/syoku_bunka_tyousa/pdf/all.pdf). 중문 간체 자료는 번체로 표기한다. 이 자료의 표기는 표시 이름 대조용이며, 경계와 현재 지역 키의 기준은 위 2026-07-01 원자료다.
