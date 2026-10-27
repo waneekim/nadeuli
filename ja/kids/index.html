@@ -50,7 +50,7 @@
         set(); addEventListener('resize', set);
         if ('ResizeObserver' in window) new ResizeObserver(set).observe(h);
       })();
-    </script> <script type="module">const a=document.querySelectorAll("[data-locale-href]"),t=()=>{/\/(events|contests)\/$/.test(location.pathname)&&a.forEach(e=>{const n=new URL(e.dataset.localeHref,location.href);n.search=location.search,e.href=n.href})};t();window.addEventListener("nadeuli:filters-changed",t);window.addEventListener("popstate",t);a.forEach(e=>{e.addEventListener("pointerdown",t),e.addEventListener("focus",t),e.addEventListener("click",t)});</script> </body> </html> <script>
+    </script> <script type="module">const n=document.querySelectorAll("[data-locale-href]"),a=()=>{/\/(events|contests)\/$/.test(location.pathname)&&n.forEach(e=>{const t=new URL(e.dataset.localeHref,location.href);t.search=location.search,e.href=t.href})};a();window.addEventListener("nadeuli:filters-changed",a);window.addEventListener("popstate",a);n.forEach(e=>{e.addEventListener("pointerdown",a),e.addEventListener("focus",a),e.addEventListener("click",a)});document.querySelectorAll("a[data-filter-href]").forEach(e=>{const t=()=>{e.href=e.dataset.filterHref};e.addEventListener("pointerdown",t),e.addEventListener("focus",t),e.addEventListener("click",t)});</script> </body> </html> <script>
   // 첫 화면 '다가오는 행사' 칸의 NEW — 빌드가 며칠 없을 때만 어제보다 오래된 표시를 뗀다(PostList 와 같은 규칙, 2026-10-24)
   (function () { var y = new Date(Date.now() + 9 * 3600e3 - 86400e3).toISOString().slice(0, 10); document.querySelectorAll('.ev-strip .new[data-pub]').forEach(function (b) { if (b.getAttribute('data-pub') < y) b.remove(); }); })();
 </script> 
