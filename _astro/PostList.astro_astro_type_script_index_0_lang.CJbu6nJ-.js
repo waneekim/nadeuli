@@ -1,0 +1,1 @@
+import{b as o,s as r,a as i,h as d,c as n}from"./hearts-client.CaivonR8.js";const t=document.querySelector(".post-list");if(t){const a=Array.from(t.querySelectorAll(":scope > li[data-id]")),e=()=>t.append(...r.get()?n(a,s=>s.dataset.id):a);o(e),r.get()&&e(),i(d(document.querySelector("[data-heart-lang]")?.dataset.heartLang))}
